@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block head %}
+<style>
+
+</style>
+{%endblock%}
+
+
+{% block body %}
+<div class="container">
+    <h1>TO DO LIST</h1>
+    <table border="1">
+        <tr>
+            <th>Task name</th>
+            <th>Created</th>
+            <th>Actions</th>
+        </tr>
+        {% for task in data %}
+        <tr>
+            <td>{{ task.content }}</td>
+            <td>{{ task.date_created}}</td>
+            <td>
+                <a id="delete" href="/delete/{{task.id}}">Delete</a>
+
+                <a id="update" href="/update/{{task.id}}">Update</a>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </table>
+    <div class="form-control">
+        <form action="/" method="POST">
+
+            <input type="text" name="content" id="content" size="40" required>
+            <input type="submit" name="submit" value="Add task" id="">
+
+        </form>
+    </div>
+
+
+</div>
+{%endblock%}

@@ -1,0 +1,94 @@
+body {
+    background: rgb(123, 105, 149);
+    background: -moz-linear-gradient(90deg, rgba(123, 105, 149, 1) 0%, rgba(94, 94, 94, 1) 0%);
+    background: -webkit-linear-gradient(90deg, rgba(123, 105, 149, 1) 0%, rgba(94, 94, 94, 1) 0%);
+    background: linear-gradient(90deg, rgba(123, 105, 149, 1) 0%, rgba(94, 94, 94, 1) 0%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7b6995", endColorstr="#5e5e5e", GradientType=1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background: rgb(123, 105, 149);
+    background: -moz-linear-gradient(90deg, rgba(123, 105, 149, 1) 0%, rgba(94, 94, 94, 1) 0%);
+    background: -webkit-linear-gradient(90deg, rgba(123, 105, 149, 1) 0%, rgba(94, 94, 94, 1) 0%);
+    background: linear-gradient(90deg, rgba(123, 105, 149, 1) 0%, rgba(94, 94, 94, 1) 0%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7b6995", endColorstr="#5e5e5e", GradientType=1);
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 90vh;
+    color: #fff;
+    box-shadow: 10px 10px 8px 10px #888888;
+
+}
+
+td {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+tr:nth-of-type(even) {
+    background-color: rgb(71, 71, 71);
+}
+
+tr {
+    text-align: center;
+    font-size: 1.8rem;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+}
+a:hover{
+    color: #4e4c4c;
+}
+#delete{
+    background-color: rgb(155, 150, 150);
+
+}
+#update{
+    background-color: rgb(113, 114, 116);
+}
+
+
+
+h1 {
+    text-align: center;
+    border-bottom: chocolate 2px solid;
+}
+
+.form-control {
+    margin: 0 auto;
+}
+
+.form-control input {
+    padding: 10px 40px;
+    font-size: 1.5rem;
+    outline: none;
+    border: 1px solid rgb(228, 172, 19);
+    border-radius: 25px;
+    background-color: burlywood;
+}
+
+.form-control input[type="text"] {
+    padding: 10px 100px;
+    transition: 0.5s;
+
+}
+.form-control input[type="text"]:focus{
+    background-color: rgb(228, 166, 85);
+} 
+
+.form-control input[type="submit"] {
+    color: rgb(48, 45, 45);
+    cursor: pointer;
+
+}
+
+.form-control input[type="submit"]:hover {
+    background-color: rgb(197, 143, 105);
+
+}
